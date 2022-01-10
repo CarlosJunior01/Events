@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">Events</string>
+    <!-- App Name -->
+    <string name="app_name">events</string>
+
+    <!-- Events Fragment -->
+    <string name="events_title">Eventos Recomendados</string>
+    <string name="events_generic_error_title">Ops!</string>
+    <string name="events_generic_error_description">Aconteceu algum erro. \nPor favor tente novamente.</string>
+    <string name="events_btn_try_again">Tentar Novamente</string>
+    <string name="event_txt_price">R$ 99.99</string>
+    <string name="event_txt_book_nows">Agende agora</string>
+    <string name="event_txt_more_info">Ver mais</string>
+
+    <!-- Details Fragment -->
+    <string name="details_fragment">Event title</string>
+    <string name="details_fragment_check_in">Check-in</string>
+    <string name="details_fragment_price">Preço</string>
+
+    <!-- About Fragment -->
+    <string name="about_fragment">About fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_dev">Desenvolvido por Carlos Junior.</string>
+    <string name="about_title">App desenvolvido para teste Android Sicred</string>
+    <string name="about_app_name">Events App</string>
+    <string name="about_description">Aplicativo Android Nativo escrito em Kotlin, consumindo Api de Eventos e processando resposta com retrofit e tratamento de concorrência com Kotlin Flow, utilizando padrão de arquitetura MVVM + Clean Architecture, com divisão de responsabilidades e separação de conceitos e desacoplamento de camadas. Injeção de dependência com Koin. Navegação e controle de fluxo de telas com Navigation e animações com Lottie. Testes unitários e Testes de interface utilizando Robolectric e Espresso.
+    </string>
+
+    <!-- Check-In Dialog -->
+    <string name="dialog_title">Check-In</string>
+    <string name="dialog_edit_name">User name</string>
+    <string name="dialog_edit_email">User email</string>
+    <string name="dialog_confirm_button">Fazer Check-In</string>
+    <string name="dialog_text_success">Check-In realizado com Sucesso!</string>
+    <string name="dialog_text_failure">Não foi possível fazer Check-In. \nTente novamente em breve.</string>
+
+    <!-- Main Activity -->
+    <string name="main_activity_title">Main Activity</string>
+
+    <!-- Content Description -->
+    <string name="back_button_description">voltar botão</string>
+    <string name="share_button_description">compartilhar botão</string>
+    <string name="check_in_description">check-in botão</string>
+
 </resources>
