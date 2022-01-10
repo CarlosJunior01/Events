@@ -20,11 +20,14 @@ Aplicativo de listagem e check-in de eventos.
 
 Aplicativo Android Nativo escrito em Kotlin, consumindo Api de Eventos e processando resposta com retrofit e tratamento de concorrência com Kotlin Flow, utilizando padrão de arquitetura MVVM + Clean Architecture, com divisão de responsabilidades e separação de conceitos e desacoplamento de camadas. Injeção de dependência com Koin. Navegação e controle de fluxo de telas com Navigation e animações com Lottie. Testes unitários e Testes de interface utilizando Robolectric e Espresso.
 
+![image](https://user-images.githubusercontent.com/9430430/148788876-a2cb5b49-63e4-4e1e-9be6-1e858f672987.png)
+*******
+![image](https://user-images.githubusercontent.com/9430430/148788991-61fde9d1-fe88-4e70-802c-4dc20dcff65f.png)
+
 *******
 * **Arquitetura MVVM + CLEAN ARCHITECTURE**
 *******
 ![image](https://user-images.githubusercontent.com/9430430/148726004-f2bf587d-ef1b-4b53-8a1e-b3fb22515c5e.png)
-
 
 ![image](https://user-images.githubusercontent.com/9430430/148726286-ed2c0e92-897c-4e98-8cac-71ef7430f614.png)
 
