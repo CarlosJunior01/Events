@@ -71,8 +71,10 @@ Com o Retrofit podemos escolher que conversor usar para a serialização de dado
 
 [![Glide](https://img.shields.io/badge/glide-4.11.0-black.svg)]()
 
-Glide: É....
-Koin: Framework de injeção de dependência que cria gerewncia e fornece instâncias dentro da aplicação.
+Glide: É um gerenciador de mídia de código aberto rápido e eficiente e estrutura de carregamento de imagem para Android que envolve decodificação de mídia, armazenamento em cache de memória e disco e pool de recursos em uma interface simples e fácil de usar.
+
+[![Navigation](https://img.shields.io/badge/navigation-2.4.0-black.svg)]()
+
 Navigation: É um componente do Jetpack que permite que os usuários naveguem pelo aplicativo.
 Está dividido em três partes principais:
         - Grafo de navegação: é um recurso XML que reúne todos os destinos e ções(cmnhos) que podem ser percorridos pelo usuário, em um local centralizado.
@@ -97,7 +99,7 @@ Lottie: Framework para adicionar, renderizar e controlar Animações dentro do a
 
 [![Koin](https://img.shields.io/badge/koin-3.0.2-black.svg)]()
 
-Koin: É uma biblioteca de injeção de dependência que reduz a injeção manual de código no projeto, gerenciando as dependências provendo os módulos na aplicação.
+Koin: É uma biblioteca de injeção de dependência que reduz a injeção manual de código no projeto, criando e gerenciando as instâncias provendo os módulos dentro da aplicação.
 
 [![Mockk](https://img.shields.io/badge/mockk-1.11.0-black.svg)]()
 
