@@ -108,6 +108,10 @@ dependencies {
     // Robolectric
     testImplementation 'org.robolectric:robolectric:4.7.3'
 
+    //Moshi (JSON mapping)
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+
     // Hamcrest
     testImplementation 'org.hamcrest:hamcrest:2.2'
 

@@ -1,6 +1,6 @@
 package com.carlos.events.di.modules
 
-import com.carlos.eventos.presenter.viewmodels.EventsViewModel
+import com.carlos.events.presentation.viewmodels.EventsViewModel
 import org.koin.core.context.loadKoinModules
 import org.koin.dsl.module
 

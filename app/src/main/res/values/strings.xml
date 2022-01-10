@@ -31,6 +31,7 @@
     <string name="dialog_edit_name">User name</string>
     <string name="dialog_edit_email">User email</string>
     <string name="dialog_confirm_button">Fazer Check-In</string>
+    <string name="dialog_alert_user">Preencha todos os campos corretamente.</string>
     <string name="dialog_text_success">Check-In realizado com Sucesso!</string>
     <string name="dialog_text_failure">Não foi possível fazer Check-In. \nTente novamente em breve.</string>
 

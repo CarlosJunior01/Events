@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presenter.fragments.about.AboutFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/btnAboutBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_size_8_dp"
+        android:layout_marginTop="@dimen/default_size_16_dp"
+        android:elevation="@dimen/default_size_1_dp"
+        android:contentDescription="@string/back_button_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/default_size_145_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_size_100_dp"
+        android:src="@drawable/events_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_size_450_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/intro_loading"/>
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="@dimen/default_size_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_size_16_dp"
+        android:layout_marginTop="@dimen/default_size_64_dp"
+        android:layout_marginEnd="@dimen/default_size_16_dp"
+        android:text="@string/about_title"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtAboutApp"
+        android:layout_width="@dimen/default_size_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_size_16_dp"
+        android:layout_marginTop="@dimen/default_size_8_dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_16_sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutTitle"
+        android:text="@string/about_app_name" />
+
+    <TextView
+        android:id="@+id/aboutDescription"
+        android:layout_width="@dimen/default_size_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_size_16_dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/default_size_16_dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_16_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutApp"
+        android:text="@string/about_description" />
+
+    <ImageView
+        android:id="@+id/linkedinIcon"
+        android:layout_width="@dimen/default_size_20_dp"
+        android:layout_height="@dimen/default_size_20_dp"
+        android:layout_marginStart="@dimen/default_size_16_dp"
+        android:layout_marginTop="@dimen/default_size_16_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutDescription"
+        app:srcCompat="@drawable/ic_linkedin" />
+
+    <TextView
+        android:id="@+id/txtAboutDev"
+        android:layout_width="@dimen/default_size_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_size_16_dp"
+        android:layout_marginEnd="@dimen/default_size_16_dp"
+        android:text="@string/about_dev"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue_00A0DF"
+        android:textSize="@dimen/default_text_16_sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linkedinIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linkedinIcon"
+        app:layout_constraintTop_toTopOf="@+id/linkedinIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

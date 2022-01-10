@@ -1,7 +1,7 @@
 package com.carlos.events.di.modules
 
 import android.util.Log
-import com.carlos.eventos.BuildConfig.BASE_URL
+import com.carlos.events.BuildConfig.BASE_URL
 import com.carlos.events.data.api.EventsApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

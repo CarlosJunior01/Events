@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/CarlosJunior/AndroidStudioProjects/Events/app/src/main/res/drawable/box.xml" value="0.32685185185185184" />
+        <entry key="..\:/Users/CarlosJunior/AndroidStudioProjects/Events/app/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="..\:/Users/CarlosJunior/AndroidStudioProjects/Events/app/src/main/res/layout/checkin_layout_dialog.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/CarlosJunior/AndroidStudioProjects/Events/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.32685185185185184" />
       </map>
     </option>

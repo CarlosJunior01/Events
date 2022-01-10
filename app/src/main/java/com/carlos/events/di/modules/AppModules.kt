@@ -9,7 +9,7 @@ import com.carlos.events.domain.usecase.CheckInUseCase
 import com.carlos.events.domain.usecase.CheckInUseCaseImpl
 import com.carlos.events.domain.usecase.GetEventsUseCase
 import com.carlos.events.domain.usecase.GetEventsUseCaseImpl
-import com.carlos.eventos.presenter.viewmodels.EventsViewModel
+import com.carlos.events.presentation.viewmodels.EventsViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
