@@ -10,10 +10,9 @@ import com.carlos.events.data.response.CheckInResponse
 import com.carlos.events.domain.model.EventsViewObject
 import com.carlos.events.domain.usecase.CheckInUseCase
 import com.carlos.events.domain.usecase.GetEventsUseCase
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.onStart
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -23,8 +22,8 @@ class EventsViewModel (
     private val checkInUseCase: CheckInUseCase
 ) : ViewModel() {
 
-    private val _screenState = Channel<StateResponse>()
-    val screenState: Flow<StateResponse> = _screenState.receiveAsFlow()
+    private val _screenState = MutableStateFlow<StateResponse>(StateResponse.StateLoading)
+    val screenState: StateFlow<StateResponse> = _screenState
 
     private val _viewEvents = MutableLiveData<List<EventsViewObject>>()
     val viewEvents = _viewEvents as LiveData<List<EventsViewObject>>
@@ -33,18 +32,18 @@ class EventsViewModel (
         viewModelScope.launch {
             getEventsUseCase.getEvents()
                 .onStart {
-                    _screenState.send(StateResponse.StateLoading)
+                    _screenState.value = StateResponse.StateLoading
                 }
 
                 .catch { error ->
                     Log.i(APP_TAG, "errorMessage: ${error.message}" )
-                    _screenState.send(StateResponse.StateError)
+                    _screenState.value = StateResponse.StateError
                 }
 
                 .collect { val eventsViewObject = it.map { events -> EventsViewObject(events) }
 
                     _viewEvents.postValue(eventsViewObject)
-                    _screenState.send(StateResponse.StateSuccess)
+                    _screenState.value = StateResponse.StateSuccess
                 }
         }
     }
@@ -52,13 +51,13 @@ class EventsViewModel (
     fun eventChekIn(checkInResponse: CheckInResponse) {
         viewModelScope.launch {
             checkInUseCase.checkIn(checkInResponse)
-                .onStart { _screenState.send(StateResponse.StateLoading) }
+                .onStart { _screenState.value = StateResponse.StateLoading }
 
                 .catch { error ->
                     Log.i(APP_TAG, "${error.message}" )
-                    _screenState.send(StateResponse.StateError) }
+                    _screenState.value = StateResponse.StateError }
 
-                .collect { _screenState.send(StateResponse.StateSuccess) }
+                .collect { _screenState.value = StateResponse.StateSuccess }
         }
     }
 
